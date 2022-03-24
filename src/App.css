@@ -15,14 +15,45 @@
 
 html,
 body {
-  margin: 0;
   height: 100%;
+}
+
+body {
+  margin: 0;
   font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
 }
 
 /* APP */
 .App {
   text-align: center;
-  width: 80%;
-  margin: 1rem auto;
+  margin: 1rem;
+}
+
+/* USERSLIST */
+.title {
+  padding: 1rem;
+  background-color: #f7f7f7;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  width: 100%;
+}
+.UsersList {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+/* ARREGLAR TITLE */
+/* FALTA EL FORM */
+
+.card {
+  padding: 1rem;
+  background-color: #f7f7f7;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
 }
