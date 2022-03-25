@@ -1,7 +1,6 @@
 /* GLOBAL */
 :root {
   --black: #1b1a17;
-  --gray: #2c394b;
   --white: #f7f7f7;
   --red: #ee524f;
   --blue: #2fa4ff;
@@ -21,7 +20,7 @@ body {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(to right, #d9a7c7, #fffcdc);
+  background: linear-gradient(to right, #9cfd88, #90c9ff);
 }
 
 /* APP */
@@ -37,18 +36,19 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
   width: 100%;
+  transition: all 320ms ease-in-out;
+}
+.title:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
 }
 .UsersList {
   display: grid;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 21rem), 1fr));
   padding: 0;
   margin: 0;
   gap: 1rem;
 }
-/* ARREGLAR TITLE */
-/* FALTA EL FORM */
-
 .card {
   padding: 1rem;
   background-color: #f7f7f7;
@@ -56,4 +56,37 @@ body {
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
+  transition: all 320ms ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+}
+.card__ctn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: left;
+}
+.card__content {
+  line-height: 1;
+}
+.card__buttons button {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fa-pencil {
+  padding: 10px;
+  border-radius: 0.25rem;
+  background-color: rgb(228, 228, 228);
+  color: var(--blue);
+}
+.fa-trash {
+  color: var(--red);
+  padding: 10px;
+  border-radius: 0.25rem;
+  background-color: rgb(228, 228, 228);
 }
