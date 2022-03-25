@@ -56,51 +56,58 @@ const UsersForm = ({ getUsers, userSelected, setUserSelected }) => {
 
   return (
     <form onSubmit={submit}>
-      <div className="input-ctn">
-        <label htmlFor="email">E-Mail: </label>
-        <input
-          type="email"
-          placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
+      <h1 className="title usersform">
+        Users Form <i className="fa-solid fa-user-plus"></i>
+      </h1>
+      <div className="form">
+        <div className="input-ctn">
+          <label htmlFor="first">Name: </label>
+          <input
+            type="text"
+            placeholder="First Name"
+            onChange={(e) => setFirstName(e.target.value)}
+            value={firstName}
+          />
+        </div>
+        <div className="input-ctn">
+          <label htmlFor="last">Last Name: </label>
+          <input
+            type="text"
+            placeholder="Last Name"
+            onChange={(e) => setLastName(e.target.value)}
+            value={lastName}
+          />
+        </div>
+        <div className="input-ctn">
+          <label htmlFor="email">E-Mail: </label>
+          <input
+            type="email"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+        </div>
+        <div className="input-ctn">
+          <label htmlFor="password">Password: </label>
+          <input
+            type="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
+          />
+        </div>
+        <div className="input-ctn">
+          <label htmlFor="birthday">Birthday: </label>
+          <input
+            type="date"
+            onChange={(e) => setBirthday(e.target.value)}
+            value={birthday}
+          />
+        </div>
+        <button>
+          Submit Data <i className="fa-solid fa-circle-arrow-up"></i>
+        </button>
       </div>
-      <div className="input-ctn">
-        <label htmlFor="first">Name: </label>
-        <input
-          type="text"
-          placeholder="First Name"
-          onChange={(e) => setFirstName(e.target.value)}
-          value={firstName}
-        />
-      </div>
-      <div className="input-ctn">
-        <label htmlFor="last">Last Name: </label>
-        <input
-          type="text"
-          placeholder="Last Name"
-          onChange={(e) => setLastName(e.target.value)}
-          value={lastName}
-        />
-      </div>
-      <div className="input-ctn">
-        <label htmlFor="password">Password: </label>
-        <input
-          type="password"
-          placeholder="Password"
-          onChange={(e) => setPassword(e.target.value)}
-          value={password}
-        />
-      </div>
-      <div className="input-ctn">
-        <label htmlFor="birthday">Birthday: </label>
-        <input
-          type="date"
-          onChange={(e) => setBirthday(e.target.value)}
-          value={birthday}
-        />
-      </div>
-      <button>Upload</button>
     </form>
   );
 };

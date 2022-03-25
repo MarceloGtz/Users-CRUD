@@ -20,12 +20,6 @@ function App() {
       .then((res) => setUsers(res.data));
   };
 
-  // const deleteUser = (id) => {
-  //   axios
-  //     .delete(`https://users-crud1.herokuapp.com/users/${id}/`)
-  //     .then(() => getUsers());
-  // };
-
   return (
     <div className="App">
       <UsersForm
@@ -37,7 +31,6 @@ function App() {
         users={users}
         getUsers={getUsers}
         setUserSelected={setUserSelected}
-        // deleteUser={deleteUser}
       />
       <footer>
         <h2 className="title">

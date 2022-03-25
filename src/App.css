@@ -90,3 +90,66 @@ body {
   border-radius: 0.25rem;
   background-color: rgb(228, 228, 228);
 }
+
+/* USERS FORM */
+.form {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  transition: all 320ms ease-in-out;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.form:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+.usersform {
+  margin-bottom: 1rem;
+}
+
+.input-ctn label {
+  display: block;
+  text-align: left;
+  margin: 7px 0;
+  font-size: 1.1rem;
+}
+
+.input-ctn input {
+  padding: 0.375rem 0.75rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 0;
+  font-size: 1rem;
+  transition: all 320ms ease-in-out;
+}
+
+.input-ctn input:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+form button {
+  background-color: var(--green);
+  color: var(--white);
+  transition: all 320ms ease-in-out;
+  width: 100%;
+  border: 0;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+form button:active {
+  background-color: #109c67;
+}
+
+form button i {
+  color: rgb(228, 228, 228);
+  padding: 10px;
+}
